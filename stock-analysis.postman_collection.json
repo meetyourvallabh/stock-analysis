@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "a05b9ea0-66ed-4b2a-ac62-95dbb82e1866",
+		"name": "stock-analysis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10475154",
+		"_collection_link": "https://martian-equinox-651737.postman.co/workspace/CAS~bbd8e4a2-d4cf-4b8f-80a8-1e46022a6ee3/collection/10475154-a05b9ea0-66ed-4b2a-ac62-95dbb82e1866?action=share&source=collection_link&creator=10475154"
+	},
+	"item": [
+		{
+			"name": "percentage_change",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/percentage_change?ticker=AMD",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"percentage_change"
+					],
+					"query": [
+						{
+							"key": "ticker",
+							"value": "AMD"
+						},
+						{
+							"key": "start_date",
+							"value": "2023-11-21",
+							"disabled": true
+						},
+						{
+							"key": "end_date",
+							"value": "2023-11-22",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "percentage_change_one_year",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/percentage_change?ticker=AMD",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"percentage_change"
+					],
+					"query": [
+						{
+							"key": "ticker",
+							"value": "AMD"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
